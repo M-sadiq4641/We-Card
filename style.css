@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: lunema;
+  src: url(./Lunema\ Regular.otf);
+}
+
+.container {
+  max-width: 1536px;
+  margin-inline: auto;
+}
+
+p {
+  font-family: Inter;
+  font-size: 80px;
+  font-weight: 400;
+}
+h1 {
+  font-family: Lunema;
+  font-size: 31px;
+  font-weight: 900;
+  line-height: 98px;
+  letter-spacing: 0em;
+  text-align: left;
+}
