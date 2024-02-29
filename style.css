@@ -84,8 +84,6 @@ h1 {
   display: flex;
 }
 
-/* hero section */
-
 .nav-container {
   background-image: url(./assets/images/hero-background.png);
   min-height: 100vh;
@@ -93,14 +91,29 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* hero section */
 
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4rem;
+
+  @media (max-width: 1450px) {
+    padding-top: 8rem;
+  }
 
   @media (max-width: 1130px) {
     margin-top: 5rem;
+    padding-top: 5rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding-top: 3rem;
+  }
+
+  @media (max-width: 470px) {
+    padding-top: 4rem;
   }
   h1 {
     color: white;
@@ -453,8 +466,6 @@ h1 {
   gap: 2rem;
 }
 
-/* <hover animation> */
-
 .marque {
   color: white;
   align-items: center;
@@ -470,5 +481,100 @@ h1 {
   img {
     padding-left: 2rem;
     cursor: pointer;
+  }
+}
+
+/* choose section */
+
+.choose-wrapper {
+  margin-block: 6rem 3rem;
+
+  h1 {
+    color: white;
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 98px;
+    text-transform: uppercase;
+    text-align: center;
+
+    span {
+      color: #8247ff;
+    }
+  }
+}
+
+.choose-full {
+  background-color: #2b3642;
+  border-radius: 40px;
+  background-image: url(./assets/images/diamond-png.png);
+
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  margin-bottom: 5rem;
+}
+
+.choose-container {
+  display: flex;
+  justify-content: end;
+}
+
+.choose-purchase {
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  width: 190px;
+  justify-content: center;
+  margin-right: 2rem;
+
+  background-color: #8247ff;
+  border-radius: 19.6px;
+  padding: 5px;
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+  }
+}
+
+.choose-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 4rem;
+
+  h1 {
+    color: white;
+    text-transform: uppercase;
+
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  span {
+    color: #8247ff;
+  }
+
+  p {
+    color: #b9bbbc;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-top: 1rem;
+  }
+
+  button {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39px;
+    color: white;
+    border: none;
+
+    background-color: #8247ff;
+    padding: 10px 1.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
   }
 }
