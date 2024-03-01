@@ -29,6 +29,10 @@ body {
 h1 {
   font-family: lunema;
 }
+
+h2 {
+  font-family: lunema;
+}
 /* nav section */
 .nav-wrapper {
   display: flex;
@@ -111,10 +115,14 @@ h1 {
   @media (max-width: 1000px) {
     padding-top: 3rem;
   }
-
-  @media (max-width: 470px) {
-    padding-top: 4rem;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding-top: 0rem;
   }
+
+  /* @media (max-width: 470px) {
+    padding-top: 4rem;
+  } */
   h1 {
     color: white;
     text-transform: uppercase;
@@ -138,7 +146,15 @@ h1 {
       font-weight: 700;
       line-height: 75px;
     }
-    @media (max-width: 630px) {
+
+    @media (max-width: 700px) {
+      text-align: center;
+    }
+
+    @media (max-width: 490px) {
+      font-size: 30px;
+    }
+    /* @media (max-width: 630px) {
       font-size: 28px;
       font-weight: 600;
       line-height: 50px;
@@ -151,7 +167,7 @@ h1 {
 
     @media (max-width: 375px) {
       font-size: 20px;
-    }
+    } */
   }
 
   img {
@@ -166,11 +182,15 @@ h1 {
       width: 400px;
     }
     @media (max-width: 700px) {
+      width: 400px;
+    }
+
+    @media (max-width: 490px) {
       width: 300px;
     }
-    @media (max-width: 630px) {
+    /* @media (max-width: 630px) {
       width: 100%;
-    }
+    } */
   }
 
   span {
@@ -195,10 +215,14 @@ h1 {
       padding: 1rem 2rem;
     }
 
-    @media (max-width: 470px) {
+    @media (max-width: 700px) {
+      display: flex;
+      margin-inline: auto;
+    }
+    /* @media (max-width: 470px) {
       padding-inline: 1rem;
       padding-block: 8px;
-    }
+    } */
   }
 }
 
@@ -673,5 +697,230 @@ h1 {
     @media (max-width: 500px) {
       width: 100%;
     }
+  }
+}
+
+/* clear section */
+
+.clear-container {
+  padding-block: 3rem;
+  background-image: url(./assets/images/clear-section-bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.clear-wrapper {
+  background-image: url(./assets/images/clear-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1536px) {
+    gap: 3rem;
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    color: #8247ff;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 65px;
+    text-transform: uppercase;
+
+    @media (max-width: 1536px) {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 60px;
+    }
+
+    @media (max-width: 1080px) {
+      text-align: center;
+    }
+
+    @media (max-width: 910px) {
+      font-size: 35px;
+    }
+
+    @media (max-width: 530px) {
+      font-size: 24px;
+      line-height: 40px;
+      padding-top: 1rem;
+      text-align: left;
+    }
+  }
+  span {
+    display: block;
+    color: white;
+  }
+}
+
+.clear-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  @media (max-width: 530px) {
+    gap: 2rem;
+  }
+}
+
+.payment-div {
+  display: flex;
+  gap: 2rem;
+
+  @media (max-width: 1080px) {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  .mastercard {
+    @media (max-width: 1536px) {
+      width: 110px;
+      height: 110px;
+    }
+
+    @media (max-width: 1350px) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @media (max-width: 530px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .visa-card {
+    @media (max-width: 1536px) {
+      width: 110px;
+      height: 110px;
+    }
+
+    @media (max-width: 1350px) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 70px;
+      height: 70px;
+    }
+    @media (max-width: 530px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .googlepay {
+    @media (max-width: 1536px) {
+      width: 110px;
+      height: 110px;
+    }
+
+    @media (max-width: 1350px) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @media (max-width: 530px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .applepay {
+    @media (max-width: 1536px) {
+      width: 110px;
+      height: 110px;
+    }
+
+    @media (max-width: 1350px) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @media (max-width: 530px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.clear-fees-div {
+  li {
+    color: white;
+
+    font-family: Lunema;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 98px;
+    text-transform: uppercase;
+
+    @media (max-width: 1536px) {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 70px;
+    }
+
+    @media (max-width: 1400px) {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 65px;
+    }
+
+    @media (max-width: 1200px) {
+      line-height: 50px;
+    }
+
+    @media (max-width: 530px) {
+      line-height: 40px;
+    }
+  }
+}
+
+/* why marquee section */
+
+.marque-li {
+  display: flex;
+  gap: 4rem;
+  padding-block: 2rem;
+
+  li {
+    color: white;
+    font-family: Lunema;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
   }
 }
