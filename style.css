@@ -149,7 +149,7 @@ h2 {
 
     @media (max-width: 700px) {
       text-align: center;
-      line-height: normal;
+      line-height: 50px;
     }
 
     @media (max-width: 490px) {
@@ -230,7 +230,7 @@ h2 {
 /* about section */
 
 .about-container {
-  margin-block: 2rem;
+  margin-block: 1rem;
   background-color: #000000;
 }
 
@@ -271,6 +271,7 @@ h2 {
       font-weight: 300;
       line-height: 25px;
       padding-inline: 1rem;
+      padding-inline: 2rem;
 
       text-align: start;
     }
@@ -279,6 +280,7 @@ h2 {
       font-size: 12px;
       word-spacing: 1px;
       line-height: 22px;
+      padding-inline: 1rem;
     }
   }
 }
@@ -287,11 +289,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 
   @media (max-width: 1150px) {
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
   }
 }
 
@@ -311,15 +312,15 @@ h2 {
   }
 
   @media (max-width: 1150px) {
-    margin: 4rem;
+    margin: 2rem;
   }
 
   @media (max-width: 500px) {
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 
   @media (max-width: 380px) {
-    padding: 1rem 5px;
+    padding: 1.5rem 10px;
     gap: 2rem;
   }
 
@@ -452,7 +453,7 @@ h2 {
     }
 
     @media (max-width: 430px) {
-      width: 250px;
+      width: 230px;
     }
   }
 
@@ -503,19 +504,23 @@ h2 {
   line-height: 22px;
   text-align: left;
   @media (max-width: 1000px) {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   img {
     padding-left: 2rem;
     cursor: pointer;
+
+    @media (max-width: 1000px) {
+      width: 90px;
+    }
   }
 }
 
 /* choose section */
 
 .choose-wrapper {
-  margin-block: 3rem;
+  margin-block: 2rem;
 
   h1 {
     color: white;
@@ -542,7 +547,7 @@ h2 {
 
   background-position: bottom right;
   background-repeat: no-repeat;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 
   @media (max-width: 1450px) {
     background-size: 300px;
@@ -554,6 +559,7 @@ h2 {
 
   @media (max-width: 1080px) {
     background-size: 300px;
+    margin-bottom: 0;
   }
 
   @media (max-width: 500px) {
@@ -587,6 +593,10 @@ h2 {
   @media (max-width: 1080px) {
     justify-content: center;
     margin-right: 0;
+  }
+
+  @media (max-width: 420px) {
+    margin-block: 1.5rem;
   }
   p {
     font-size: 16px;
@@ -709,7 +719,7 @@ h2 {
 /* clear section */
 
 .clear-container {
-  padding-block: 3rem;
+  padding-block: 2rem;
   background-image: url(./assets/images/clear-section-bg.png);
   background-position: left;
   background-repeat: no-repeat;
@@ -733,7 +743,7 @@ h2 {
 
   @media (max-width: 1080px) {
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem 2rem;
     gap: 1.5rem;
   }
 
@@ -919,7 +929,7 @@ h2 {
 .marque-li {
   display: flex;
   gap: 4rem;
-  padding-block: 2rem;
+  padding-block: 1rem;
 
   li {
     color: white;
@@ -928,6 +938,11 @@ h2 {
     font-weight: 900;
     line-height: 28px;
     text-transform: uppercase;
+
+    @media (max-width: 600px) {
+      font-size: 35px;
+      padding-block: 0;
+    }
   }
 }
 
@@ -935,18 +950,21 @@ h2 {
 
 .crypto-wrapper {
   display: flex;
-  margin-block: 2rem;
-  @media (max-width: 1600px) {
-    overflow: scroll;
-    max-width: 100%;
-    scroll-behavior: smooth;
-    border-radius: 40px;
+  margin-block: 1rem;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    gap: 3rem;
   }
 
   img {
-    @media (max-width: 460px) {
-      width: 250px;
-      height: 480px;
+    @media (max-width: 1600px) {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 680px) {
+      border-radius: 20px;
     }
   }
 
@@ -955,26 +973,51 @@ h2 {
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
+
+    @media (max-width: 1300px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 1050px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 18px;
+    }
   }
   p {
     color: white;
     font-size: 13px;
     font-weight: 400;
     line-height: 25px;
+
+    @media (max-width: 1300px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 1050px) {
+      font-size: 6px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 12px;
+    }
   }
 }
 
 .crypto-img {
   position: relative;
 
-  @media (max-width: 1600px) {
-  }
-
   h1 {
     position: absolute;
     bottom: 100px;
     min-width: 100%;
     text-align: center;
+
+    @media (max-width: 1300px) {
+      bottom: 50px;
+    }
   }
 
   p {
@@ -983,16 +1026,16 @@ h2 {
     min-width: 100%;
     text-align: center;
 
-    @media (max-width: 460px) {
+    @media (max-width: 1300px) {
       bottom: 30px;
     }
   }
 
   img {
-    border-radius: 40px 0 0 40px;
+    border-radius: 30px 0 0 30px;
 
-    @media (max-width: 1600px) {
-      border-radius: 0;
+    @media (max-width: 680px) {
+      border-radius: 20px;
     }
   }
 }
@@ -1005,6 +1048,10 @@ h2 {
     bottom: 100px;
     min-width: 100%;
     text-align: center;
+
+    @media (max-width: 1300px) {
+      bottom: 50px;
+    }
   }
 
   p {
@@ -1013,7 +1060,7 @@ h2 {
     min-width: 100%;
     text-align: center;
 
-    @media (max-width: 460px) {
+    @media (max-width: 1300px) {
       bottom: 30px;
     }
   }
@@ -1027,6 +1074,10 @@ h2 {
     bottom: 100px;
     min-width: 100%;
     text-align: center;
+
+    @media (max-width: 1300px) {
+      bottom: 50px;
+    }
   }
 
   p {
@@ -1035,7 +1086,7 @@ h2 {
     min-width: 100%;
     text-align: center;
 
-    @media (max-width: 460px) {
+    @media (max-width: 1300px) {
       bottom: 30px;
     }
   }
@@ -1044,11 +1095,23 @@ h2 {
 .customer-img {
   position: relative;
 
+  img {
+    border-radius: 0 30px 30px 0;
+
+    @media (max-width: 680px) {
+      border-radius: 20px;
+    }
+  }
+
   h1 {
     position: absolute;
     bottom: 100px;
     min-width: 100%;
     text-align: center;
+
+    @media (max-width: 1300px) {
+      bottom: 50px;
+    }
   }
 
   p {
@@ -1057,16 +1120,8 @@ h2 {
     min-width: 100%;
     text-align: center;
 
-    @media (max-width: 460px) {
+    @media (max-width: 1300px) {
       bottom: 30px;
-    }
-  }
-
-  img {
-    border-radius: 0 40px 40px 0;
-
-    @media (max-width: 1600px) {
-      border-radius: 0;
     }
   }
 }
@@ -1082,6 +1137,7 @@ h2 {
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    margin-block: 3rem 0rem;
   }
 
   h1 {
@@ -1151,6 +1207,10 @@ h2 {
 
 .transparent-mastercard {
   padding-top: 3rem;
+
+  @media (max-width: 1000px) {
+    padding-block: 0;
+  }
   img {
     @media (max-width: 1450px) {
       width: 450px;
@@ -1178,8 +1238,9 @@ h2 {
 
 .footer-container {
   background-color: #222b35;
+
   @media (max-width: 800px) {
-    height: 100vh;
+    padding-bottom: 1rem;
   }
 }
 
@@ -1193,6 +1254,7 @@ h2 {
     justify-content: center;
     text-align: center;
     padding-bottom: 0;
+    padding-block: 1rem;
   }
 }
 
@@ -1216,6 +1278,7 @@ h2 {
 
     @media (max-width: 800px) {
       justify-content: center;
+      padding-bottom: 1rem;
     }
 
     h1 {
@@ -1242,6 +1305,10 @@ h2 {
   gap: 2rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 800px) {
+    gap: 0;
+  }
   h3 {
     color: white;
     font-size: 24px;
@@ -1269,6 +1336,10 @@ h2 {
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 800px) {
+    gap: 0;
+  }
+
   h3 {
     font-size: 24px;
     font-weight: 600;
@@ -1277,6 +1348,7 @@ h2 {
 
     @media (max-width: 1200px) {
       font-size: 14px;
+      line-height: 25px;
     }
   }
 
@@ -1323,11 +1395,9 @@ h2 {
     @media (max-width: 1200px) {
       font-size: 14px;
     }
-  }
 
-  img {
-    @media (max-width: 860px) {
-      width: 25px;
+    @media (max-width: 800px) {
+      padding-bottom: 10px;
     }
   }
 }
