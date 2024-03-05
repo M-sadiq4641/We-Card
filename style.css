@@ -1205,7 +1205,22 @@ h2 {
   }
 }
 
+.transparent-mastercard:hover .bouncing-image {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
 .transparent-mastercard {
+  display: inline-block;
+  perspective: 1000px;
   padding-top: 3rem;
 
   @media (max-width: 1000px) {
