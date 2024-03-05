@@ -65,13 +65,20 @@ h2 {
     -webkit-text-fill-color: transparent;
   }
 
+  .gradient-button:hover {
+    background-position: left bottom;
+  }
+
   button {
+    transition: background-position 1s;
+    background: linear-gradient(to right, #8247ff 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     font-size: 20px;
     font-weight: 600;
     line-height: 39px;
     padding: 6px 2rem;
     border: 1px solid #3f3e3e;
-    background-color: transparent;
     border-radius: 10px;
     color: white;
     cursor: pointer;
